@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    width: 100%;     
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    color: grey;
+
+}
+
+nav ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 17px;
+}
+
+.brand{
+    font-size: 25px;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 0 5%;
+}
+
+.main-inside{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('./bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.info{
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(128, 128, 128, 0.575);
+    padding: 5px;
+    border-radius: 10px;
+}
+.info h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+
+.social-icons{
+    width: 50px;
+    height: 130px;
+    background-color: rgba(128, 128, 128, 0.52);
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.my-cv{
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+}
+
+.my-cv a{
+    padding: 20px 30px;
+    background-color: rgba(128, 128, 128, 0.507);
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.social-icons a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.ham{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav .ham{
+        display: block;
+
+    }
+    main .info {
+        width: 70%;
+        height: 300px;
+    }
+    main .social-icons{
+        bottom: 10px;
+        right: 10px;
+        
+    }
+    .my-cv {
+        bottom: 30px;
+        left: 10px;
+
+    }
+}
+
